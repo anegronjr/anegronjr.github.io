@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Ubuntu';
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background: white;
+}
+
+.container {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100vh;
+    max-width: 200rem;
+    margin: 0px auto;
+}
+
+aside {
+    background-color: #fff;
+    box-shadow: -2px 0px 20px 0px #5a5a5a;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    width: 20rem;
+    min-width: 15rem;
+}
+
+.logo {
+    text-align: center;
+    font-family: 'Ubuntu';
+    font-size: 14rem;
+    margin-top: -4rem;
+    margin-bottom: 1rem;
+}
+
+nav li {
+    list-style: none;
+    text-align: right;
+    padding-right: 1.6rem;
+    margin-bottom: 0.8rem;
+}
+
+nav a {
+    position: relative;
+    text-decoration: none;
+    color: #525250;
+    font-weight: bolder;
+    font-size: 2rem;
+    transition: margin .3s ease-in-out;
+}
+
+nav a:hover {
+    color: #bbd7e9;
+    margin-right: 1rem;
+    transition: margin .3s ease-in-out;
+}
+
+.aside-invis {
+    font-size: 14rem;
+    visibility: hidden;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 8px 0px 22px 0px #5a5a5a;
+    background-color: #dfdbdb;
+    flex-grow: 1;
+    height: 100vh;
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox compatibility */
+    -ms-overflow-style: none; /* IE 10+ */
+}
+
+main::-webkit-scrollbar { /* WebKit */
+    width: 0;
+}
+
+.about {
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 54rem;
+    background-image: url(images/aboutme1.jpg);
+    background-size: cover;
+    background-position: 0% 20%; /* Horizontal, Vertical */
+}
+
+.about-blurb {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 60rem;
+    margin-right: 32rem;
+}
+
+.about-blurb h2 {
+    font-size: 8rem;
+    margin-bottom: 6rem;
+}
+
+.about-blurb p {
+    font-size: 4rem;
+    align-self: flex-end;
+    margin-right: -28rem;
+    margin-bottom: -10rem;
+}
+
+.projects {
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: row;
+    height: 100vh;
+    background-image: url(images/projectsbg.jpg);
+    box-shadow: 0px -4px 20px 2px #494949;
+    background-size: cover;
+}
+
+.projects-blurb {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin-top: 3rem;
+    margin-left: 5rem;
+}
+
+.projects-blurb h2 {
+    font-size: 8rem;
+    margin-bottom: 3rem;
+}
+
+.projects-blurb p {
+    font-size: 4rem;
+    margin-left: 10rem;
+}
+
+.contact {
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: row;
+    height: 50vh;
+    background: red;
+}

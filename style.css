@@ -30,7 +30,7 @@ aside {
     box-shadow: -2px 0px 20px 0px #5a5a5a;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-between;
+    justify-content: flex start;
     width: 20rem;
     min-width: 15rem;
 }
@@ -42,6 +42,11 @@ aside {
     margin-top: -4rem;
     margin-bottom: 1rem;
     color: #333;
+}
+
+nav {
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 nav li {
@@ -66,11 +71,6 @@ nav a:hover {
     transition: margin .3s ease;
 }
 
-.aside-invis {
-    font-size: 14rem;
-    visibility: hidden;
-}
-
 main {
     display: flex;
     flex-direction: column;
@@ -81,6 +81,7 @@ main {
     overflow-y: scroll;
     scrollbar-width: none; /* Firefox compatibility */
     -ms-overflow-style: none; /* IE 10+ */
+    scroll-behavior: smooth;
 }
 
 main::-webkit-scrollbar { /* WebKit */
@@ -127,13 +128,14 @@ main::-webkit-scrollbar { /* WebKit */
     justify-content: flex-start;
     height: 70vh;
     box-shadow: 0px -4px 20px 2px #494949;
-    background: white;
+    background: rgba(255, 213, 146, 0.356);
+    background: #222;
+    color: #eee;
 }
 
-.learning h2 {
+#learning-h2 {
     font-size: 6rem;
     font-style: italic;
-    color: #333;
     margin-top: 3rem;
     margin-left: 5rem;
 }
@@ -149,10 +151,56 @@ main::-webkit-scrollbar { /* WebKit */
 
 .learning-card {
     display: flex;
-    background: grey;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 70%;
     width: 50%;
     margin: 0rem 4rem;
+}
+
+.learning-card h2 {
+    font-size: 2.5rem;
+    font-style: normal;
+}
+
+.card-content {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card-logo {
+    background-image: url(images/wccilogo.jpeg);
+    background-size: contain;
+    height: 30rem;
+    width: 30rem;
+}
+
+#ux-logo {
+    background-image: url(images/ux.jpg);
+    background-size: cover;
+    background-position: 10% 0%;
+    margin-top: 5rem;
+    border-radius: 2rem;
+}
+
+.card-blurb {
+    height: 30rem;
+    width: 40rem;
+    font-size: 2rem;
+    padding: 1rem;
+    list-style-position: inside;
+    margin-top: 4rem;
+}
+
+.card-blurb p {
+    margin-bottom: 1.5rem;
+}
+
+.card-blurb ul {
+    margin-left: 3rem;
 }
 
 .projects {
@@ -160,9 +208,9 @@ main::-webkit-scrollbar { /* WebKit */
     flex-shrink: 0;
     flex-direction: column;
     justify-content: space-between;
-    height: 70vh;
+    height: 100vh;
     background-image: url(images/projectsbg.jpg);
-    box-shadow: 0px -4px 20px 2px #494949;
+
     background-size: cover;
     background-position: 0;
 }
@@ -190,6 +238,7 @@ main::-webkit-scrollbar { /* WebKit */
     width: 100%;
     height: 55vh;
     align-self: center;
+    margin: auto 0;
 }
 
 .card {
@@ -261,6 +310,37 @@ main::-webkit-scrollbar { /* WebKit */
 .contact {
     display: flex;
     flex-shrink: 0;
+    flex-direction: column;
+    height: 30vh;
+    background: #c4302b;
+}
+
+.contact h2 {
+    font-size: 6rem;
+    font-style: italic;
+    color: #fff;
+    margin-top: 3rem;
+    margin-left: 5rem;
+}
+
+.contact-content {
+    display: flex;
     flex-direction: row;
-    height: 50vh;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-bottom: 2rem;
+    align-self: stretch;
+    margin: auto 0 0 0;
+    height: 20vh;
+}
+
+i.far,i.fab
+ {
+    color: white;
+    transition: 0.3s ease;
+}
+
+i.far:hover,i.fab:hover {
+    transform: scale(1.3,1.3);
+    transition: 0.3s ease;
 }

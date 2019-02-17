@@ -96,6 +96,7 @@ main::-webkit-scrollbar { /* WebKit */
     align-items: center;
     height: 54rem;
     background-image: url(images/aboutme1.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: 0% 20%; /* Horizontal, Vertical */
 }
@@ -174,8 +175,10 @@ main::-webkit-scrollbar { /* WebKit */
 .card-logo {
     background-image: url(images/wccilogo.jpeg);
     background-size: contain;
+    background-repeat: no-repeat;
     height: 30rem;
     width: 30rem;
+    margin: 2rem;
 }
 
 #ux-logo {
@@ -192,6 +195,7 @@ main::-webkit-scrollbar { /* WebKit */
     font-size: 2rem;
     padding: 1rem;
     list-style-position: inside;
+    margin: 2rem;
     margin-top: 4rem;
 }
 
@@ -239,6 +243,7 @@ main::-webkit-scrollbar { /* WebKit */
     height: 55vh;
     align-self: center;
     margin: auto 0;
+    flex-wrap: wrap;
 }
 
 .card {

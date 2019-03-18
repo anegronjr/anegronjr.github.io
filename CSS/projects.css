@@ -1,0 +1,98 @@
+.projects {
+    height: 100vh;
+    background: #090a0f;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-right: solid 1px rgba(255,255,255,0.3);
+    overflow-x: hidden;
+    cursor: pointer;
+}
+
+.project-container:nth-child(4){
+    border: none;
+}
+
+.project-container:hover {
+    background: #101720;
+} 
+
+.project-track {
+    display: flex;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    height: 100%;
+}
+
+.project-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    height: 100%;
+}
+
+.project-num {
+    color: #b28949;
+    font-size: 12rem;
+    font-family: 'Merriweather'; 
+}
+
+.project-title {
+    color: white;
+    font-size: 4rem;
+    font-family: 'Ubuntu';
+}
+
+.project-blurb {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255,255,255,0.9);
+    font-size: 1.75rem;
+    font-family: 'Lato';
+    font-weight: 300;
+    text-align: center;
+    padding: 0 4rem 0 4rem;
+    min-width: 100%;
+    height: 100%;
+}
+
+.project-stack {
+    font-size: 7rem;
+    margin-bottom: 3rem;
+}
+
+.project-stack i {
+    margin: 0 1rem 0 1rem;
+}
+
+.git-link {
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+    align-self: flex-end;
+    font-family: 'Roboto Condensed';
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+.git-link i {
+    margin: 0 1rem 0 1rem;
+}
+
+.git-link:hover {
+    color: #b28949;
+    transform: translateX(10px);
+    transition: all 0.3s ease-in-out;
+}

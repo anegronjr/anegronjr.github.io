@@ -43,4 +43,17 @@
     border-bottom: solid 1px rgba(255, 255, 255, 0.3);
     border-right: none;
   }
+
+  .project-stack {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+  }
+
+  .project-blurb {
+    font-size: 2rem;
+  }
+
+  .git-link {
+    margin-top: 1rem;
+  }
 }

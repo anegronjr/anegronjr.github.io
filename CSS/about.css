@@ -12,7 +12,7 @@
     align-items: center;
 }
 
-.about-pic img {
+.about-pic {
     object-fit: cover;
     border-radius: 50%;
     object-position: 0px -7rem;

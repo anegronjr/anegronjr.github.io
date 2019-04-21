@@ -18,7 +18,12 @@ a, a:visited, a:link, a:hover {
 body {
   scroll-snap-type: mandatory;
   scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
+}
+
+section {
+  scroll-snap-align: start;
 }
 
 header {
